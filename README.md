@@ -73,4 +73,9 @@ To check java version =>java -version
 
 then execute => java -jar "jar-name" 
 
+To install java => sudo yum install java
+java -version
+
+
+
 
