@@ -5,7 +5,7 @@ https://www.youtube.com/playlist?list=PLSg8jHkYTg9FG9v5VEikhYwhT_9SdXHcU
 
 
 
-**Create EC2 instance
+# Create EC2 instance
 
 1. Go to AWS Console
 2. In the right corner select the region => Mumbai asia pacific
@@ -21,28 +21,29 @@ instance type t2.micro (free)
 Finally created on launch instance
 
 
-**Open port 8080
+# Open port 8080
 
 1. select EC2 instance => select security tab => select security group 
 = > edit inbound rules => select Type => custom TCP => Port range "8080"  => Source => 0.0.0.0/0 => save rules
 
-**Connect to Putty
 
-**Download and install putty
+# Connect to Putty
+
+# Download and install putty
 Search "Puttygen" in windows search
 start puttygen
 Generate "ppk file" using ".pem" file generated from EC2 instance
 click on save "private key" button
 
-**Search putty in windows search
+# Search putty in windows search
 add host Name => EC2 instance => pubilc ip address => 13.232.254.239
 Connection => SSH => Auth => Credentials => private key file => add ".ppk" file
 open
 Enter user name => ec2-user
 hit cmd => ls -l
 
-**To deploy the spring boot jar onto the AWS (Windows => AWS Ec instance) 
-**We need to install WinSCP/ mobxyterm
+# To deploy the spring boot jar onto the AWS (Windows => AWS Ec instance) 
+# We need to install WinSCP/ mobxyterm
 
 File protocol => SFTP
 Host name => 13.232.254.239
@@ -56,7 +57,7 @@ Press "Login"
 On the Left side "Local Folders" or the right side "/home/ec2-user"
 Select jar from local that moved to "/home/ec2-user"
 
-**Goto putty again
+# Goto putty again
 
 cmd => ls -l
 
